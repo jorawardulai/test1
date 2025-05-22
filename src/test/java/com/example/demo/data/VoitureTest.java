@@ -8,10 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 public class VoitureTest {
+    Voiture voiture = new Voiture("peugeot", 20000);
 
     @Test
     void creerVoiture(){
-        assertEquals(1,1);
+        String a =voiture.getMarque();
+        assertEquals(a, "peugeot");
     }
 
 }
